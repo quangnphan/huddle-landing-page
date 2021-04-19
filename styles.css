@@ -1,0 +1,242 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    display: flex;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+li{
+    list-style: none;
+    font-weight: 400;
+    font-family: 'Open Sans',sans-serif;
+}
+.wrapper{
+    width: 100%;
+    text-align: center;
+}
+.top-wrapper{
+    background: url('images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(193,100%,96%);
+    width: 100%;
+    padding: 50px;
+}
+.top-wrapper img,
+.middle-wrapper img{
+    width: 375px;
+    height: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: center;
+}
+.nav img{
+    width: 170px;
+    height: auto;
+}
+.top-wrapper .heading{
+    display: flex;
+    flex-direction: column;
+}
+.top-wrapper .heading h1{
+    color: var(--VeryDarkCyan);
+    margin-bottom: 30px;
+}
+.top-wrapper .heading p{
+    color: var(--VeryDarkCyan);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+.top-wrapper .nav button{
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border: none;
+    color: var(--VeryDarkCyan);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.top-wrapper .heading button{
+    margin: 50px;
+    border: none;
+    background-color: var(--Pink);
+    font-size: 1.1rem;
+    padding: 20px 60px;
+    border-radius: 50px;
+    color: var(--VeryPaleCyan);
+    font-weight: 700;
+    cursor: pointer;
+}
+.middle-wrapper{
+    padding: 50px 30px;
+}
+.box{
+    margin: 50px auto 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.box h1{
+    color: var(--VeryDarkCyan);
+    margin: 50px auto 30px auto;
+    font-size: 1.7rem;
+}
+.box p{
+    color: var(--GrayishBlue);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+.box4{
+    margin-bottom: -130px;
+    position: relative;
+    max-width: 800px;
+}
+.box4 button{
+    border: none;
+    background-color: var(--Pink);
+    font-size: 1.1rem;
+    padding: 20px 60px;
+    border-radius: 50px;
+    color: var(--VeryPaleCyan);
+    font-weight: 700;
+    cursor: pointer;
+    width: 300px;
+    align-self: center;
+}
+.bottom-wrapper{
+    background-color: rgb(3, 55, 68);
+    padding: 30px;
+    text-align: left;
+    color: #fff;
+}
+.bottom-wrapper .logo{
+    margin-top: 150px;
+}
+.bottom-wrapper .location,.phone,.mail{
+    display: flex;
+    margin-top: 30px;
+}
+.bottom-wrapper .contact p{
+    margin-left: 40px;
+}
+.bottom-wrapper .about{
+    margin-top: 40px;
+    line-height: 2.5;
+}
+.bottom-wrapper .career{
+    margin-bottom: 40px;
+    line-height: 2.5;
+}
+.bottom-wrapper .footer{
+    text-align: center;
+    margin: 60px auto 30px auto;
+}
+.bottom-wrapper .icons i{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 20px 10px;
+}
+.icons i:hover{
+    color:hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+    .wrapper{
+        text-align: left;
+    }
+    .top-wrapper{
+        padding:70px 100px;
+        background: url('images/bg-hero-desktop.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(193,100%,96%);
+    }
+    .top-wrapper .heading img{
+        width: 700px;
+        height: auto;
+    }
+    .top-wrapper .heading{
+        flex-direction: row;
+    }
+    .top-wrapper .heading .text{
+        align-self: center;
+        max-width: 600px;
+        margin-right: 70px;
+    }
+    .middle-wrapper{
+        padding: 70px 100px;
+    }
+    .box1{
+        flex-direction: row;
+    }
+    .box1 .box1-text{
+        margin-left: 100px;
+        align-self: center;
+    }
+    .box2{
+        flex-direction: row-reverse;
+    }
+    .box2 .box2-text{
+        margin-right: 100px;
+        align-self: center;
+    }
+    .box3 .box3-text{
+        margin-left:100px;
+        align-self: center;
+    }
+    .box3{
+        flex-direction: row;
+    }
+    .bottom-wrapper{
+        display: flex;
+        flex: row;
+    }
+    .bottom-wrapper .contact{
+        max-width: 400px;
+    }
+    .bottom-wrapper .about{
+        margin: 210px 100px;
+    }
+    .bottom-wrapper .career{
+        margin: 210px auto;
+    }
+    .bottom-wrapper .footer{
+        margin-top: 210px;
+    }
+    .bottom-wrapper .icons{
+        margin-bottom: 150px;
+    }
+}
