@@ -35,22 +35,22 @@ li{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(193,100%,96%);
-    width: 100%;
-    padding: 50px;
+    padding: 10px;
 }
 .top-wrapper img,
 .middle-wrapper img{
-    width: 375px;
+    width: 80%;
     height: auto;
 }
 .nav{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin:0 auto 80px auto;
     align-items: center;
+    width: 90%;
 }
 .nav img{
-    width: 170px;
+    width: 120px;
     height: auto;
 }
 .top-wrapper .heading{
@@ -60,6 +60,7 @@ li{
 .top-wrapper .heading h1{
     color: var(--VeryDarkCyan);
     margin-bottom: 30px;
+
 }
 .top-wrapper .heading p{
     color: var(--VeryDarkCyan);
@@ -74,31 +75,34 @@ li{
     font-size: 1rem;
     font-weight: 700;
     border-radius: 50px;
-    padding: 15px 40px;
+    padding: 10px;
     cursor: pointer;
 }
 .top-wrapper .heading button{
-    margin: 50px;
+    margin: 50px auto;
     border: none;
     background-color: var(--Pink);
     font-size: 1.1rem;
-    padding: 20px 60px;
+    padding: 10px 30px;
     border-radius: 50px;
     color: var(--VeryPaleCyan);
     font-weight: 700;
     cursor: pointer;
+    width: 80%;
 }
 .middle-wrapper{
-    padding: 50px 30px;
+    padding: 0;
+    width: 100%;
 }
 .box{
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 .box h1{
     color: var(--VeryDarkCyan);
@@ -111,20 +115,20 @@ li{
     font-size: 1.2rem;
 }
 .box4{
-    margin-bottom: -130px;
+    margin-bottom: -50px;
     position: relative;
-    max-width: 800px;
+    width: 80%;
 }
 .box4 button{
     border: none;
     background-color: var(--Pink);
     font-size: 1.1rem;
-    padding: 20px 60px;
+    padding: 10px;
     border-radius: 50px;
     color: var(--VeryPaleCyan);
     font-weight: 700;
     cursor: pointer;
-    width: 300px;
+    width: 80%;
     align-self: center;
 }
 .bottom-wrapper{
@@ -135,13 +139,15 @@ li{
 }
 .bottom-wrapper .logo{
     margin-top: 150px;
+    width: 60%;
 }
 .bottom-wrapper .location,.phone,.mail{
     display: flex;
     margin-top: 30px;
 }
 .bottom-wrapper .contact p{
-    margin-left: 40px;
+    margin: 0 auto;
+    width: 80%;
 }
 .bottom-wrapper .about{
     margin-top: 40px;
@@ -150,6 +156,9 @@ li{
 .bottom-wrapper .career{
     margin-bottom: 40px;
     line-height: 2.5;
+}
+.bottom-wrapper .location img{
+    height: 30px;
 }
 .bottom-wrapper .footer{
     text-align: center;
@@ -173,7 +182,7 @@ li:hover{
     cursor: pointer;
 }
 
-@media (min-width:768px){
+@media (min-width:600px){
     .wrapper{
         text-align: left;
     }
@@ -223,6 +232,10 @@ li:hover{
     .bottom-wrapper{
         display: flex;
         flex: row;
+    }
+    .box4{
+        margin-bottom: -110px;
+        width: 60%;
     }
     .bottom-wrapper .contact{
         max-width: 400px;
