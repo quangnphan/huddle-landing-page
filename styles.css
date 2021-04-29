@@ -45,7 +45,7 @@ li{
 .nav{
     display: flex;
     justify-content: space-between;
-    margin:0 auto 80px auto;
+    margin:50px auto 80px auto;
     align-items: center;
     width: 90%;
 }
@@ -83,12 +83,12 @@ li{
     border: none;
     background-color: var(--Pink);
     font-size: 1.1rem;
-    padding: 10px 30px;
+    padding: 15px 50px;
     border-radius: 50px;
     color: var(--VeryPaleCyan);
     font-weight: 700;
     cursor: pointer;
-    width: 80%;
+    width: 60%;
 }
 .middle-wrapper{
     padding: 0;
@@ -114,21 +114,25 @@ li{
     opacity: 0.8;
     font-size: 1.2rem;
 }
+.box3{
+    margin-bottom: -120px;
+}
 .box4{
-    margin-bottom: -50px;
+    bottom: -120px;
     position: relative;
     width: 80%;
+    padding-bottom: 50px;
 }
 .box4 button{
     border: none;
     background-color: var(--Pink);
     font-size: 1.1rem;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50px;
     color: var(--VeryPaleCyan);
     font-weight: 700;
     cursor: pointer;
-    width: 80%;
+    width: 60%;
     align-self: center;
 }
 .bottom-wrapper{
@@ -186,6 +190,16 @@ li:hover{
     .wrapper{
         text-align: left;
     }
+    .nav{
+        width: 100%;
+        margin: 20px auto 80px auto;
+    }
+    .nav img{
+        width: 200px;
+    }
+    .top-wrapper .nav button{
+        padding: 15px 50px;
+    }
     .top-wrapper{
         padding:70px 100px;
         background: url('images/bg-hero-desktop.svg');
@@ -204,6 +218,10 @@ li:hover{
         align-self: center;
         max-width: 600px;
         margin-right: 70px;
+    }
+    .top-wrapper .heading button{
+        width: 60%;
+        padding: 15px 50px;
     }
     .middle-wrapper{
         padding: 70px 100px;
@@ -234,8 +252,12 @@ li:hover{
         flex: row;
     }
     .box4{
-        margin-bottom: -110px;
+        bottom: -200px;
         width: 60%;
+    }
+    .box4 button{
+        width: 60%;
+        padding: 15px 60px;
     }
     .bottom-wrapper .contact{
         max-width: 400px;
